@@ -1,8 +1,10 @@
 /* eslint-env browser */
 import _ from 'lodash';
 import '../css/style.css';
-import '../css/bootstrap.min.css';
-import '../css/font-awesome/css/all.css';
+// import '../css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import '../css/font-awesome/css/all.css';
+import 'font-awesome/css/font-awesome.min.css';
 
 import Icon from '../image/images.jpg';
 import runCode from './code';
