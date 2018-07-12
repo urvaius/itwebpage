@@ -7,12 +7,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
 import Icon from '../image/images.jpg';
-import runCode from './code';
+import * as codeblock from './code';
+// import runCode2 from './code';
 
 if (process.env.NODE_ENV !== 'production') {
   console.log('We Are in Development mode!!');
 }
 
+// document.getElementById('btn1').onclick = codeblock.runCodetwo();
 const body = document.getElementsByTagName('body')[0];
 function component() {
   const element = document.createElement('div');
@@ -21,11 +23,12 @@ function component() {
   element.classList.add('hello');
   btn.className = ('btn btn-primary');
   btn.innerHTML = 'click me an check the console';
-  btn.onclick = runCode;
+  btn.onclick = codeblock.runCode;
   // element.innerHTML = 'will be jumbotron';
   // add an image to our existing div
   const myIcon = new Image();
   myIcon.src = Icon;
+  document.getElementById('btn1').onclick = codeblock.runCodetwo;
 
   element.appendChild(btn);
   element.appendChild(myIcon);
