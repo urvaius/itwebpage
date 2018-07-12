@@ -5,7 +5,7 @@ import '../css/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import '../css/font-awesome/css/all.css';
 import 'font-awesome/css/font-awesome.min.css';
-import jQuery from 'jquery';
+import $ from 'jquery';
 
 import Icon from '../image/images.jpg';
 import * as codeblock from './code';
@@ -28,11 +28,11 @@ function component() {
   // element.innerHTML = 'will be jumbotron';
   // add an image to our existing div
   const myIcon = new Image();
-  const testtext = jQuery('#testme');
+  const testtext = $('#testme');
   myIcon.src = Icon;
   // document.getElementById('btn1').onclick = codeblock.runCodetwo;
   // yes this jquery works here instead of above code
-  jQuery('#btn1').click(codeblock.runCodetwo);
+  $('#btn1').click(codeblock.runCodetwo);
   // buttontest.onclick = testtext.text('jquery did click this');
   testtext.text('this is jquery test so it works here');
   element.appendChild(btn);
