@@ -2,6 +2,8 @@
 import '../css/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
+import 'jquery';
+import 'bootstrap/dist/js/bootstrap';
 // import $ from 'jquery';
 
 // import Icon from '../image/images.jpg';
