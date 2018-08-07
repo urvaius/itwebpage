@@ -1,1 +1,1 @@
-alert('hello this is typescript');
+console.log('this is typescript file yay');

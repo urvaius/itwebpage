@@ -7,7 +7,7 @@ module.exports = {
     app: './src/js/sitecode.js',
     test1: './src/js/index1.js',
     code: './src/js/code.js',
-    // typsc: './src/ts/typecode.ts',
+    typsc: './src/ts/typecode.ts',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
