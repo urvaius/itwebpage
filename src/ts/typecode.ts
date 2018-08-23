@@ -16,7 +16,8 @@ if (process.env.NODE_ENV !== 'production') {
 function changeColor(color: string) {
   
   document.getElementById('purps').style.color = color;
-  document.getElementById('purps').textContent = "I am now Red";
+ // document.getElementById('btn1').style.color = color;
+ 
   // testing jquery does work here
 }
 console.log('this is typescript file yay');
@@ -25,7 +26,15 @@ function testLog(){
 }
 
 $( "#btn1" ).click(function() {
+  document.getElementById('purps').textContent = "I am now Red";
   changeColor('red');
 });
-
+$( "#btn2" ).click(function() {
+  document.getElementById('purps').textContent="i am now orange";
+  changeColor('orange');
+});
+$( "#btn3").click(function() {
+  document.getElementById('purps').textContent="I am purple again"
+  changeColor('purple');
+});
 export {changeColor, testLog};
