@@ -34,7 +34,11 @@ $( "#btn2" ).click(function() {
   changeColor('orange');
 });
 $( "#btn3").click(function() {
-  document.getElementById('purps').textContent="I am purple again"
+  document.getElementById('purps').textContent="I am purple again";
   changeColor('purple');
+});
+$( "#btn4").click(function() {
+  document.getElementById('purps').textContent="I am blue now";
+  changeColor('blue');
 });
 export {changeColor, testLog};
